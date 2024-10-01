@@ -1,0 +1,49 @@
+# Blender MTL File: 'v2.blend'
+# Material Count: 4
+
+newmtl Brown_Wood
+Ns 323.999994
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 1 1 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd wood_gray_v2.png
+
+newmtl Material.001
+Ns 225.000000
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+# Kd 0.6 0.4 0
+# Kd 1 1 1
+Ks 1 1 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+# map_Kd wood.png
+map_Kd wood_gray_v2.png
+
+newmtl Material.002
+Ns 323.999994
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 1 1 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd gray.png
+
+newmtl Material.003
+Ns 225.000
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 1 1 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd light_red.png

@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+
+<world name="demo_world" gravity="0.0 0.0 -9.81">
+
+	<robot name="iiwa14">
+		<model dir="../model/iiwa14" path="iiwa14.urdf" name="iiwa" />
+		<origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+	</robot>
+
+	<light name="light1" type="directional">
+		<position xyz="2.0 -2.0 2.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</light>
+
+	<light name="light2" type="directional">
+		<position xyz="2.0 2.0 2.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</light>
+
+	<camera name="camera">
+		<position xyz="1.5 1.0 1.0" />
+		<vertical xyz="0.0 0.0 1.0" />
+		<lookat xyz="0.0 0.0 0.4" />
+	</camera>
+
+	<static_object name="box">
+		<origin xyz="0.3 -0.1 0.495" rpy="0 0 0" />
+		<visual>
+	        <origin xyz="0. 0.0 0.0" rpy="0 0 0" />
+	        <geometry>
+				<box size="0.35 0.35 0.02 "/>
+	        </geometry>
+			<material name="blue-ish">
+                <color rgba="0 0.2 0.4 0.1" />
+            </material>
+	    </visual>
+		<collision>
+	        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+	        <geometry>
+				<box size="0.5 0.5 0.02 "/>
+	        </geometry>
+	    </collision>
+	</static_object>
+	
+</world>

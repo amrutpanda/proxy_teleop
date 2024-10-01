@@ -1,0 +1,40 @@
+This document contains instructions for installing and running the docker container in both Windows and mac os.
+The image has been tested in windows 11.
+
+1 - Install docker. please go to the following link.
+	*** https://docs.docker.com/engine/install/ ***
+
+2 - Windows users need to install "vcXsrv Windows X server" for running graphical application.
+	Please download it from link below
+	*** https://sourceforge.net/projects/vcxsrv/ ***
+	
+	while installing check on the "Disable access control option" and install it.
+	
+	Launch the application. 
+	
+	Mac users need to download and install "Xquartz" for running graphical applications.
+	
+	While installing, click on the "security section and enable all the options available(e.g. (i) Authenticate connections (ii) Allow connections from network clients) " and then install.
+	
+	Launch the application.
+	
+3 - Download the docker image from the given link. Create a folder named "Docker" and place the file there.
+    The image needs to be loaded as container first. Open windows terminal inside "Docker" folder and paste the commands below.
+    
+    *** docker load --input <docker image with .tar extension> ***
+    It will take a some time for docker engine to setup everything.
+    
+    check with "docker images" command in terminal to verify whether the image has been created successfully.
+    The name of the image will also appear on the terminal.
+    
+4 - The image needs to be run to create a container. Paste the following command in terminal to run the image.
+	Windows users: 
+	*** docker run -it --env="DISPLAY=<Your IP address>:0" <Docker image name found from "docker images"command"> ***
+	
+	Mac users:
+	*** docker run -it --env="DISPLAY=host.docker.internal:0" <Docker image name found from "docker images"command">
+	
+If everything works fine. You should be see a bash terminal.
+Please go the following link for more information:
+
+*** https://medium.com/@saicoumar/running-linux-guis-in-a-docker-container-73fef186db30 ***
